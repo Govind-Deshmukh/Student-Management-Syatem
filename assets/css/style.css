@@ -1,0 +1,28 @@
+.mainLogo{
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-outline-primary a {
+    text-decoration: none;
+}
+
+.btn-primary a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    margin: 5px;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px;
+}
