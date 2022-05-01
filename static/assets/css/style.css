@@ -32,3 +32,18 @@
 .footer-link{
     text-decoration: none;
 }
+
+/* jumbotron style  */
+.jumbotron{
+    background-color: #ececec;
+    margin: 15px 50px 50px 8px;
+    border-radius: 8px;
+}
+.insideJumbo{
+    padding: 10px;
+}
+
+.card-body img {
+    width: 150px;
+    
+}
