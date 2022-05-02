@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+
+<link rel="stylesheet" href="{{url_for('static', filename='mdbootstrap/css/mdb.min.css')}}">
+<script src="{{url_for('static', filename='mdbootstrap/js/mdb.min.js')}}"></script>
+<div class="container mt-5 w-75">
+	<!-- Pills navs -->
+	<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+		<li class="nav-item" role="presentation"> <a class="nav-link active" id="ex3-tab-1" data-mdb-toggle="pill" href="#studentLogin" role="tab" aria-controls="studentLogin" aria-selected="true">Student Login</a
+      >
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex3-tab-3"
+        data-mdb-toggle="pill"
+        href="#teacherLogin"
+        role="tab"
+        aria-controls="teacherLogin"
+        aria-selected="false"
+        >Teacher Login</a
+      >
+    </li>
+  </ul>
+  <!-- Pills navs -->
+  
+  <!-- Pills content -->
+  <div class="tab-content" id="ex2-content">
+    <div
+      class="tab-pane fade show active"
+      id="studentLogin"
+      role="tabpanel"
+      aria-labelledby="ex3-tab-1"
+    >
+      <!-- student login form  -->
+      <form class="form-group container mt-5">
+        <div class="form-outline border mb-4">
+          <input type="email" id="studentUsername" class="form-control" />
+          <label class="form-label" for="studentUsername">Username</label>
+        </div>
+      
+        <div class="form-outline border b mb-4">
+          <input type="password" id="studentPassword" class="form-control" />
+          <label class="form-label" for="studentPassword">Password</label>
+        </div>
+      
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="studentCheck" checked />
+              <label class="form-check-label" for="rememberMe"> Remember me </label>
+            </div>
+          </div>
+      
+          <div class="col">
+            <a href="#!">Forgot password?</a> </div>
+</div>
+<div class="d-flex justify-content-center">
+	<button type="submit" class="btn btn-primary btn-block w-50">Sign in</button>
+</div>
+</form>
+</div>
+<div class="tab-pane fade" id="teacherLogin" role="tabpanel" aria-labelledby="ex3-tab-3">
+	<!-- teacher login  -->
+	<form class="form-group container mt-5">
+		<div class="form-outline border mb-4">
+			<input type="email" id="form1Example1" class="form-control" />
+			<label class="form-label" for="teacherUsername">Username</label>
+		</div>
+		<div class="form-outline border b mb-4">
+			<input type="password" id="form1Example2" class="form-control" />
+			<label class="form-label" for="teacherPassword">Password</label>
+		</div>
+		<div class="row mb-4">
+			<div class="col d-flex justify-content-center">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="teacherCheck" checked />
+					<label class="form-check-label" for="rememberMe"> Remember me </label>
+				</div>
+			</div>
+			<div class="col">
+                <a href="#!">Forgot password?</a> </div>
+		</div>
+		<div class="d-flex justify-content-center">
+			<button type="submit" class="btn btn-success btn-block w-50">Sign in</button>
+		</div>
+	</form>
+</div>
+</div>
+</div>
+
+
+{% endblock %}
