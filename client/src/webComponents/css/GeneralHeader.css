@@ -1,0 +1,9 @@
+.navbar{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e3f2fd;
+}
+
+.nav-link{
+    margin: 8px 10px 0px 8px;
+}
