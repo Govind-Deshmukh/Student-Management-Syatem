@@ -2,6 +2,7 @@ import './App.css';
 
 import GeneralHeader from './webComponents/GeneralHeader';
 import LoginContainer from './webComponents/LoginContainer';
+import AdminHome from './adminPage/AdminHome';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <div className='border-bottom-heading w-50'></div>
         </div>
         <LoginContainer/>
+        
       </>
   );
 }

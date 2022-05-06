@@ -1,10 +1,11 @@
 import React from 'react'
-import './css/GeneralHeader.css'
 
-export default function generalHeader() {
+import AddStudent from './AddStudent'
+
+export default function AdminHome() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">My Online Class</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,15 @@ export default function generalHeader() {
           </div>
         </div>
       </nav>
-
+      {/* nav bar complete  */}
+    <div className="container">
+            <div className="col-md-6">
+                <AddStudent/>
+            </div>
+            <div className="col-md-6">
+            </div>
+        </div>
     </div>
   )
 }
+
