@@ -1,21 +1,21 @@
-import './App.css';
+import "./App.css";
 
-import GeneralHeader from './webComponents/GeneralHeader';
-import LoginContainer from './webComponents/LoginContainer';
-import AdminHome from './adminPage/AdminHome';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import LoginContainer from "./webComponents/LoginContainer";
+import AdminHome from "./adminPage/AdminHome";
 
 function App() {
   return (
-      <>
-        <GeneralHeader/>
-        <div className='text-center mt-5'>
-          <h1>MGM's College Of Engineering, Nanded</h1>
-          <h2 className='text-muted mt-3'>Student Management System</h2>
-          <div className='border-bottom-heading w-50'></div>
-        </div>
-        <LoginContainer/>
-        
-      </>
+    <>
+      <Router>
+        <Routes>
+      
+          <Route path="/admin" element={<AdminHome />} />
+          <Route path="/" element={<LoginContainer />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

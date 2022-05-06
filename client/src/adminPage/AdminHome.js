@@ -1,48 +1,26 @@
-import React from 'react'
+import React from "react";
 
-import AddStudent from './AddStudent'
-
+import AddStudent from "./AddStudent";
+import GeneralHeader from "../webComponents/GeneralHeader";
+import AddTeacher from "./AddTeacher";
+import NoticeSection from "./NoticeSection";
 export default function AdminHome() {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">My Online Class</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="http://mgmcen.ac.in">College</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="https://student.dbatuapps.in/">DBatu</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="http://mgmcen.ac.in/contact.aspx">Contact</a>
-              </li>
-
-
-            </ul>
-
-              <button className="btn btn-outline-primary" type="submit">Log In</button>
-        
-          </div>
+      <GeneralHeader />
+      <div className="d-flex justify-content-center row m-5">
+        <div className="col-md-6">
+          <AddStudent />
         </div>
-      </nav>
-      {/* nav bar complete  */}
-    <div className="container">
-            <div className="col-md-6">
-                <AddStudent/>
-            </div>
-            <div className="col-md-6">
-            </div>
+        <div className="col-md-6">
+          <AddTeacher />
         </div>
+      </div>
+      <div className="d-flex justify-content-center row m-5">
+        <div className="col-md-12">
+          <NoticeSection />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
-
