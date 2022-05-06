@@ -1,9 +1,10 @@
 import React from "react";
+import "./common.css";
 
 export default function AddStudent() {
   return (
     <>
-      <div class="card">
+      <div class="card text-center">
         <div class="card">
           <div class="card-header">Student Management Section</div>
           <div class="card-body">
@@ -17,7 +18,7 @@ export default function AddStudent() {
             <a href="/" class="btn btn-primary m-2">
               Add Student
             </a>
-            <a href="/" class="btn btn-danger m-2">
+            <a href="/" class="btn btn-danger">
               Remove Student
             </a>
           </div>
