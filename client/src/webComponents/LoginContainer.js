@@ -5,6 +5,11 @@ export default function LoginContainer() {
   return (
     <>
       <GeneralHeader />
+      <div className="text-center mt-5">
+        <h1>MGM's College Engineering, Nanded</h1>
+        <h2 className="text-muted">Student Management System CASERP</h2>
+        <div className="mt-4 border-bottom-heading w-50"></div>
+      </div>
       <ul
         className="d-flex justify-content-center mt-5 nav nav-pills mb-3"
         id="pills-tab"

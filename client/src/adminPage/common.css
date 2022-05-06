@@ -1,7 +1,11 @@
 .card-header{
-    background-color: #ececec;
+    background-color: #dee2e6;
     font-weight: bold;
     font-size: 20px;
-    border: 2px solid #ececec;
-    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 1.5rem;
+}
+
+.card-body{
+    background-color: #fafafa;
 }
