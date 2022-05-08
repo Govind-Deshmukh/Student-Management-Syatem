@@ -1,29 +1,111 @@
 import React from "react";
 import "./common.css";
-
+import GeneralHeader from "../webComponents/GeneralHeader";
 export default function AddStudent() {
   return (
-    <>
-      <div class="card text-center">
-        <div class="card">
-          <div class="card-header">Student Management Section</div>
-          <div class="card-body">
-            <h5 class="card-title">
-              You can manage each student from this section.
-            </h5>
-            <p class="card-text">Add, Delete and Update faculty from here.</p>
-            <a href="/" class="btn btn-success m-2">
-              Update Student
-            </a>
-            <a href="/" class="btn btn-primary m-2">
-              Add Student
-            </a>
-            <a href="/" class="btn btn-danger">
-              Remove Student
-            </a>
-          </div>
-        </div>
+    <div>
+      <GeneralHeader />
+      <div className="text-center m-5">
+        <h1>
+          <mark>Fill This Form to Create New Student Account</mark>
+        </h1>
       </div>
-    </>
+      <div className="d-flex justify-content-center">
+        <form action="">
+          <div className="row form-group m-4">
+            <label>Enter Firstname</label>
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Enter Firstname"
+            />
+          </div>
+          <div className="row form-group m-4">
+            <label>Enter Midname</label>
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Enter Midname"
+            />
+          </div>
+
+          <div className="row form-group m-4">
+            <label>Enter Lastname</label>
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Enter Surname"
+            />
+          </div>
+
+          <div className="row form-group m-4">
+            <label>Enter EmailID of Student</label>
+            <input
+              className="form-control"
+              type="email"
+              placeholder="Enter Email"
+            />
+          </div>
+
+          <div className="row form-group m-4">
+            <label>
+              Enter Student ID (S1032190220)
+            </label>
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Enter Student ID"
+            />
+          </div>
+          <div className="row form-group m-4">
+            <label>
+              Enter Phone Number Of Student
+            </label>
+            <input
+              className="form-control"
+              type="number"
+              placeholder="Enter Contact Number"
+            />
+          </div>
+          <div className="row form-group m-4">
+            <label>
+              Enter Roll Number of Student
+            </label>
+            <input
+              className="form-control"
+              type="number"
+              placeholder="Enter Roll Number"
+            />
+          </div>
+          <div className="row form-group m-4">
+            <label>Select Branch</label>
+            <select className="form-control" id="">
+              <option value="1">Computer Science and Engineering</option>
+              <option value="2">Civil Engineering</option>
+              <option value="3">Information Technology</option>
+              <option value="4">
+                Electronics and Telecommunication Engineering
+              </option>
+              <option value="5">Mechnical Engineering</option>
+            </select>
+          </div>
+          <div className="row form-group m-4">
+            <label>Select Acadamic Year</label>
+            <select className="form-control" id="">
+              <option value="1">First Year</option>
+              <option value="2">Second Year</option>
+              <option value="3">Third Year</option>
+              <option value="4">Final Year</option>
+            </select>
+          </div>
+          <div className="row form-group m-4 m-4">
+            <a href="/" className="btn btn-success w-100">
+              Add Student to Database
+            </a>
+          
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }

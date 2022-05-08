@@ -9,7 +9,7 @@ export default function AdminLogin() {
         <h1>MGM's College Engineering, Nanded</h1>
         <h2 className="text-muted">Student Management System CASERP</h2>
         <h3><mark>Admin Login Page</mark></h3>
-        <p className='text-muted'>If you are not admin of orginization then login here for control</p>
+        <p className='text-muted'>If you are admin of orginization then login here for control</p>
         <div className="mt-4 border-bottom-heading w-50"></div>
       </div>
       <div>
