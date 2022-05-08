@@ -45,7 +45,7 @@ export default function generalHeader() {
   
             </ul>
 
-            <a className="btn btn-outline-primary" href='/'>
+            <a className="btn btn-outline-primary" href='/adminLogin'>
               Log In
             </a>
           </div>
