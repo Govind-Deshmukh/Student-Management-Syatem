@@ -10,7 +10,7 @@ export default function NoticeSection() {
           <p class="card-text">
             Note that published notices will be visible for all people in your orginazation.
           </p>
-          <a href="/" class="btn btn-primary m-5">
+          <a href="/" class="btn btn-primary m-2">
             Add Notice
           </a>
           <a href="/" class="btn btn-success">
