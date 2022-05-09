@@ -5,7 +5,7 @@ import GeneralHeader from "../webComponents/GeneralHeader";
 
 export default function AdminHome() {
   return (
-    <div>
+    <div className="container">
       <GeneralHeader />
       <div className="d-flex justify-content-center row m-5">
         <div className="col-md-6">
@@ -43,7 +43,7 @@ export default function AdminHome() {
               <a href="/" class="btn btn-success m-2">
                 Update Teacher
               </a>
-              <a href="/" class="btn btn-primary m-2">
+              <a href="/RegisterTeacher" class="btn btn-primary m-2">
                 Add Teacher
               </a>
               <a href="/" class="btn btn-danger">

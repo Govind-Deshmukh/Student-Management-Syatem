@@ -6,6 +6,7 @@ import LoginContainer from "./webComponents/LoginContainer";
 import AdminHome from "./adminPage/AdminHome";
 import AdminLogin from "./AdminLogin";
 import AddStudent from "./adminPage/AddStudent";
+import AddTeacher from "./adminPage/AddTeacher";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/adminDashboard" element={<AdminHome />} />
           <Route path="/" element={<LoginContainer />} />
           <Route path="/RegisterStudent" element={<AddStudent />} />
+          <Route path="/RegisterTeacher" element={<AddTeacher />} />
         </Routes>
       </Router>
     </>
