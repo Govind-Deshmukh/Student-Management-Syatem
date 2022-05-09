@@ -5,7 +5,7 @@ import GeneralHeader from "../webComponents/GeneralHeader";
 
 export default function AdminHome() {
   return (
-    <div className="container">
+    <div className="">
       <GeneralHeader />
       <div className="d-flex justify-content-center row m-5">
         <div className="col-md-6">
