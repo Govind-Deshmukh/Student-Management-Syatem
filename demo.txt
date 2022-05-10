@@ -1,2 +1,0 @@
-07/05
-installed django and installed jwt and django rest framework
